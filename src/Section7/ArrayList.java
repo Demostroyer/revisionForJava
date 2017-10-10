@@ -1,5 +1,11 @@
 package Section7;
+/*
+ * 
+ * This is an unbounded implementation of the ArrayList idea. Note: This is my own simplified version of the 
+ * Java class , ArrayList, which already exists. 
+ */
 public class ArrayList<E> implements List<E> {
+	
 	
 	//this will require some instance variables
 	private E[] data;//the array used to store the list references
@@ -18,7 +24,6 @@ public class ArrayList<E> implements List<E> {
 		/**
 		 * This is actually really smart. Because even though I set the capacity to 2, the size of the arraylist 
 		 * is dependent on how many objects are actually inside the arraylist at the time of call to the size() method.
-		 * 
 		 */
 		ArrayList<Object> arrayList=new ArrayList<Object>(2);
 		arrayList.add(0, "first element");
